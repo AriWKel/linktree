@@ -43,7 +43,7 @@ body {
     gap: 25px;
     place-content: center;
     place-items: center;
-    flex-grow: 1;
+    flex-shrink: 1;
     background-color: var(--base2);
 }
 
