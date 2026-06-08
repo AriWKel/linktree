@@ -8,14 +8,16 @@ import picture_light from './assets/picture_light.svg'
 import picture_dark from './assets/picture_dark.svg'
 import './vars.css'
 import './App.css'
-import React from 'react'
+import { React, useEffect } from 'react'
 
 let mode = localStorage.getItem('mode')
 
-if (mode == 'dark'){
-    darkMode()
-} else {
-    lightMode()
+function checkMode(){
+    if (mode === 'dark'){
+        darkMode()
+    } else {
+        lightMode()
+    }
 }
 
 function darkMode(){
@@ -29,6 +31,11 @@ function lightMode(){
 }
 
 function App() {
+
+    useEffect (() => {
+        checkMode();
+    }, []);
+
     return (
         <body>
             <div className="top_section">
@@ -52,12 +59,20 @@ function App() {
                 </h1>
             </div>
             <div className="button_section">
-                <img src={blue_button_light}>
-                </img>
-                <img src={blue_button_light}>
-                </img>
-                <img src={blue_button_light}>
-                </img>
+                <a href="www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
+                    <button className='link_button'>
+                        Linkedin
+                    </button>
+                </a>
+                <button className='link_button'>
+                    Linkedin
+                </button>
+                <button className='link_button'>
+                    Linkedin
+                </button>
+                <button className='link_button'>
+                    Linkedin
+                </button>
             </div>
         </body>
     )

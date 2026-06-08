@@ -64,13 +64,26 @@ body {
     flex-direction: column;
     place-items: center;
     place-content: center;
-    flex-shrink: 1;
+    /* flex-shrink: 0; */
     gap: 25px;
 }
 
 .bio_text {
-    color: var(--orange);
+    color: var(--base02);
     text-align: center;
+}
+
+.link_button {
+    height: 100px;
+    width: 500px;
+    color: var(--base02);
+    font-size: x-large;
+    font-weight: 800;
+    background: var(--violet);
+    border-radius: 80px;
+    border-style: solid;
+    border-color: var(--base02);
+    border-width: 08px;
 }
 
 #dual_asset img:last-child{
