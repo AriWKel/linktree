@@ -59,19 +59,19 @@ function App() {
                 </h1>
             </div>
             <div className="button_section">
-                <a href="www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
+                <a href="http://www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
                     <button className='link_button'>
                         Linkedin
                     </button>
                 </a>
                 <button className='link_button'>
-                    Linkedin
+                    Portfolio
                 </button>
                 <button className='link_button'>
-                    Linkedin
+                    Resume
                 </button>
                 <button className='link_button'>
-                    Linkedin
+                    Github
                 </button>
             </div>
         </body>
