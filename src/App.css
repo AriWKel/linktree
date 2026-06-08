@@ -1,10 +1,49 @@
-.main_section {
+:root {
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base3: #fdf6e3;
+  --base2: #eee8d5;
+  --base1: #93a1a1;
+  --base0: #839496;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
+}
+
+.dark_mode {
+  --base3: #002b36;
+  --base2: #073642;
+  --base1: #586e75;
+  --base0: #657b83;
+  --base03: #fdf6e3;
+  --base02: #eee8d5;
+  --base01: #93a1a1;
+  --base00: #839496;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
+}
+
+body {
     display: flex;
     flex-direction: column;
     gap: 25px;
     place-content: center;
     place-items: center;
     flex-grow: 1;
+    background-color: var(--base2);
 }
 
 .top_section {
@@ -13,18 +52,35 @@
     gap: 25px;
 }
 
-.button_section {
+.text_section {
     display: flex;
     place-items: center;
     place-content: center;
     gap: 25px;
 }
 
-.text_section {
+.button_section {
     display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    flex-shrink: 1;
     gap: 25px;
 }
 
 .bio_text {
-    color: #eee8d5;
+    color: var(--orange);
+    text-align: center;
+}
+
+#dual_asset img:last-child{
+    display: none;
+}
+
+.dark_mode #dual_asset img:first-child{
+    display: none;
+}
+
+.dark_mode #dual_asset img:last-child{
+    display: block;
 }
