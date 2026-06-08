@@ -6,7 +6,6 @@ import dark_button from './assets/dark_button.svg'
 import light_button from './assets/light_button.svg'
 import picture_light from './assets/picture_light.svg'
 import picture_dark from './assets/picture_dark.svg'
-import './vars.css'
 import './App.css'
 import { React, useEffect } from 'react'
 
@@ -66,13 +65,13 @@ function App() {
                         Linkedin
                     </button>
                 </a>
-                //need to make portfolio site
+                {/* need to make portfolio site */}
                 <a href="http://www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
                     <button className='link_button'>
                         Portfolio
                     </button>
                 </a>
-                //need to make resume site
+                {/* //need to make resume site */}
                 <a href="http://www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
                     <button className='link_button'>
                         Resume
