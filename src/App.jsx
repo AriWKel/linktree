@@ -10,6 +10,7 @@ import './vars.css'
 import './App.css'
 import { React, useEffect } from 'react'
 
+//retrieves light/dark mode from local storage
 let mode = localStorage.getItem('mode')
 
 function checkMode(){
@@ -32,6 +33,7 @@ function lightMode(){
 
 function App() {
 
+    //calls checkMode when element is loaded i.e. whenever page is loaded
     useEffect (() => {
         checkMode();
     }, []);
@@ -64,15 +66,23 @@ function App() {
                         Linkedin
                     </button>
                 </a>
-                <button className='link_button'>
-                    Portfolio
-                </button>
-                <button className='link_button'>
-                    Resume
-                </button>
-                <button className='link_button'>
-                    Github
-                </button>
+                //need to make portfolio site
+                <a href="http://www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
+                    <button className='link_button'>
+                        Portfolio
+                    </button>
+                </a>
+                //need to make resume site
+                <a href="http://www.linkedin.com/in/ari-kelley-bb77183b0" target='_blank'>
+                    <button className='link_button'>
+                        Resume
+                    </button>
+                </a>
+                <a href="https://github.com/AriWKel" target='_blank'>
+                    <button className='link_button'>
+                        Github
+                    </button>
+                </a>
             </div>
         </body>
     )
